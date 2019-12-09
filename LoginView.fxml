@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="555.0" prefWidth="480.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="client.Login">
+   <children>
+      <Label layoutX="52.0" layoutY="255.0" prefHeight="20.0" prefWidth="108.0" text="Server address" />
+      <Label layoutX="65.0" layoutY="315.0" prefHeight="20.0" prefWidth="82.0" text="Server port" />
+      <Label layoutX="70.0" layoutY="380.0" text="Username" />
+      <TextField fx:id="username" layoutX="187.0" layoutY="375.0" />
+      <TextField fx:id="hostname" layoutX="187.0" layoutY="250.0" text="localhost" />
+      <TextField fx:id="portText" layoutX="187.0" layoutY="310.0" text="9001" />
+      <Button fx:id="login" layoutX="361.0" layoutY="446.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: #5fcffb" text="Login">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="137.0" fitWidth="287.0" layoutX="101.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/login.png" />
+         </image>
+      </ImageView>
+      <!--<Button id="MinimizedBtn" fx:id="MinimizedBtn" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="390.0" layoutY="-1.0" maxHeight="24.0" maxWidth="68.0" minWidth="45.0" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="24.0" prefWidth="45.0" text="—">-->
+      <!--</Button>-->
+      <!--<Button id="CloseBtn" fx:id="CloseBtn" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="435.0" layoutY="-1.0" maxHeight="24.0" maxWidth="68.0" minWidth="45.0" mnemonicParsing="false" onAction="#closeSystem" prefHeight="24.0" prefWidth="45.0" text="X">-->
+      <!--</Button>-->
+   </children>
+</Pane>

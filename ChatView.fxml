@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="820.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="client.ChatControl">
+   <children>
+      <Button fx:id="buttonSend" layoutX="609.0" layoutY="481.0" mnemonicParsing="false" onAction="#sentBtn" prefHeight="47.0" prefWidth="184.0" style="-fx-background-color: #5fcffb;" text="Send">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <!--<Button id="MinimizedBtn" fx:id="MinimizedBtn" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="730.0" layoutY="-1.0" maxHeight="24.0" maxWidth="68.0" minWidth="45.0" mnemonicParsing="false" onAction="#minimizeWindow" prefHeight="24.0" prefWidth="45.0" text="—">-->
+      <!--</Button>-->
+      <!--<Button id="CloseBtn" fx:id="CloseBtn" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="775.0" layoutY="-1.0" maxHeight="24.0" maxWidth="68.0" minWidth="45.0" mnemonicParsing="false" onAction="#closeSystem" prefHeight="24.0" prefWidth="45.0" text="X">-->
+      <!--</Button>-->
+      <ScrollPane layoutX="28.0" layoutY="52.0" prefHeight="414.0" prefWidth="559.0">
+         <content>
+            <TextArea fx:id="MessageList" editable="false" prefHeight="412.0" prefWidth="557.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextArea>
+         </content>
+      </ScrollPane>
+      <TextArea fx:id="UserList" editable="false" layoutX="609.0" layoutY="50.0" prefHeight="418.0" prefWidth="184.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextArea>
+      <TextArea fx:id="messageBox" layoutX="26.0" layoutY="481.0" prefHeight="47.0" prefWidth="563.0" promptText="Please type in your message and press 'Send'" />
+   </children>
+</Pane>
